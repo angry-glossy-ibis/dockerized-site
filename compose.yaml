@@ -1,0 +1,9 @@
+services:
+  php:
+    build: .
+    command: php -S 0.0.0.0:8080
+    container_name: project-php
+    ports:
+      - "80:8080"
+    volumes:
+      - ./src/:/var/www/html/
